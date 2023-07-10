@@ -1,8 +1,46 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Fill Out Form";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Hello! Welcome to my website!</h1>
-    <p>Visit UK's website <a href="https://www.uky.edu/">here</a>.</p>
-</div>
+<div id="content">
+		<div id="main">
+			<div id="left">
+				<p>Kindly fill out the following form.</p>
+				<form method="post">
+					<label for="fn">First Name <span class="small-text">(letters only)</span></label>
+					<input type="text" placeholder="Enter first name" name="fn" id="fn">
+
+					<label for="ln">Last Name <span class="small-text">(letters only)</span></label>
+					<input type="text" placeholder="Enter last name" name="ln" id="ln">
+
+					<label for="p">Phone <span class="small-text">(format: 1234567890)</span></label>
+					<input type="text" placeholder="Enter phone number" name="p" id="p">
+
+					<label for="ea">Email Address <span class="small-text">(format: a@a.a)</span></label>
+					<input type="text" placeholder="Enter email address" name="ea" id="ea">
+
+					<label for="sa">Street Address <span class="small-text">(format: 1 a a)</span></label>
+					<input type="text" placeholder="Enter street address" name="sa" id="sa">
+
+					<label for="c">City <span class="small-text">(letters only)</span></label>
+					<input type="text" placeholder="Enter city" name="c" id="c">
+
+					<label for="s">State <span class="small-text">(letters only)</span></label>
+					<input type="text" placeholder="Enter state" name="s" id="s">
+
+					<label for="zc">Zip Code <span class="small-text">(numbers only)</span></label>
+					<input type="text" placeholder="Enter zip code" name="zc" id="zc">
+				</form>
+				<button onclick="showInput()" type="button">Submit</button>
+			</div>
+
+			<div id="right">
+				<p class="your-input">Your input:</p>
+				<div id="name"></div>
+				<div id="phone"></div>
+				<div id="emailaddress"></div>
+				<div id="streetaddress"></div>
+				<div id="address"></div>
+			</div>
+		</div>
+	</div>

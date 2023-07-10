@@ -5,39 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - InternshipHello</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/helloworldcss.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/InternshipHello.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">InternshipHello</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+		<hgroup>
+			<img src="https://comm.uky.edu/sites/default/files/inline-images/my-UK.png" height="51.5" width="113.5">
+			<h2>Fill Out Form</h2>
+		</hgroup>
+	</header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2023 - InternshipHello
         </div>
     </footer>
+    <script>
+			function showInput() {
+				// Declare and initialize all variables
+				var firstname = document.getElementById("fn").value;
+				var lastname = document.getElementById("ln").value;
+				var phone = document.getElementById("p").value;
+				var emailaddress = document.getElementById("ea").value;
+				var streetaddress = document.getElementById("sa").value;
+				var city = document.getElementById("c").value;
+				var state = document.getElementById("s").value;
+				var zipcode = document.getElementById("zc").value;
+
+				// Assign each JavaScript variable to a HTML variable to display
+				document.getElementById("name").innerHTML = firstname + " " + lastname;
+				document.getElementById("phone").innerHTML = document.getElementById("p").value;
+				document.getElementById("emailaddress").innerHTML = document.getElementById("ea").value;
+				document.getElementById("streetaddress").innerHTML = document.getElementById("sa").value;
+				document.getElementById("address").innerHTML = city + ", " + state + " " + zipcode;
+				}
+	</script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
