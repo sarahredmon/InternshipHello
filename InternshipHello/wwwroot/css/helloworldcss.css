@@ -1,122 +1,126 @@
 #content {
-			display: box;
-			display: -moz-box;
-			display: -wekbit-box;
-			display: -ms-box;
+	display: box;
+	display: -moz-box;
+	display: -wekbit-box;
+	display: -ms-box;
 
-			box-orient: vertical;
-			-moz-box-orient: vertical;
-			-webkit-box-orient: vertical;
-			-ms-box-orient: vertical;
+	box-orient: vertical;
+	-moz-box-orient: vertical;
+	-webkit-box-orient: vertical;
+	-ms-box-orient: vertical;
 
-			height: 200px;
-			width: 600px;
-			margin-right: auto;
-			margin-left: auto;
+	height: 200px;
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
 
-			font-family: Arial, Helvetica, sans-serif;
-			font-size: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0;
 }
 
 #main {
-			display: box;
-			display: -moz-box;
-			display: -webkit-box;
-			display: -ms-box;
-			box-orient: horizontal;
+	display: box;
+	display: -moz-box;
+	display: -webkit-box;
+	display: -ms-box;
+	box-orient: horizontal;
 
-			-moz-box-orient: horizontal;
-			-webkit-box-orient: horizontal;
-			-ms-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+	-webkit-box-orient: horizontal;
+	-ms-box-orient: horizontal;
 }
 
 #left {
-			box-flex: 6;
-			-moz-box-flex: 6;
-			-webkit-box-flex: 6;
-			-ms-box-flex: 6;
+	box-flex: 6;
+	-moz-box-flex: 6;
+	-webkit-box-flex: 6;
+	-ms-box-flex: 6;
 }
 
 #right {
-			box-flex: 1;
-			-moz-box-flex: 1;
-			-webkit-box-flex: 1;
-			-ms-box-flex: 1;
+	box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	-ms-box-flex: 1;
 }
 
 header {
-			display:block;
-			text-align: center;
-			background-color: blue;
-			color: white;
-			padding: 0;
+	display: block;
+	text-align: center;
+	background-color: #0032A0;
+	color: white;
+	padding: 0;
 }
 
 form {
-			display: flex;
-			flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 input {
-			margin: 4px 0px 16px 0px;
-			outline: none;
-			padding: 8px;
-			border: none;
-			background-color: #E1E1E1;
-			border-radius: 4px;
-			color: black;
+	margin: 4px 0px 16px 0px;
+	outline: none;
+	padding: 8px;
+	border: none;
+	background-color: #E1E1E1;
+	border-radius: 4px;
+	color: black;
 }
 
 button {
-			background-color: blue;
-			border: none;
-			padding: 12px;
-			outline: none;
-			color: white;
-			border-radius: 4px;
+	background-color: #0032A0;
+	border: none;
+	padding: 12px;
+	outline: none;
+	color: white;
+	border-radius: 4px;
 }
 
 button:hover {
-			cursor: pointer;
-			background-color: #2904A4;
+	cursor: pointer;
+	background-color: #2904A4;
 }
 
 ::selection {
-			background: #1E90FF;
-			color: white;
+	background: #0032A0;
+	color: white;
 }
 
 #name, #phone, #emailaddress, #streetaddress, #address {
-			font-weight: bold;
-			text-align: center;
-			font-size: 16px;
-			margin-bottom: 50px;
+	font-weight: bold;
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 50px;
 }
 
 .small-text {
-			font-size: 8px;
-			font-weight: normal;
+	font-size: 8px;
+	font-weight: normal;
 }
 
 h2 {
-			display: inline;
+	display: inline;
 }
 
 label, p {
-			font-size: 16px;
+	font-size: 16px;
 }
 
 p {
-			font-weight: bold;
-			margin-top: 12px;
-			margin-bottom: 12px;
+	font-weight: bold;
+	margin-top: 12px;
+	margin-bottom: 12px;
 }
 
 p.your-input {
-			text-align: center;
+	text-align: center;
+}
+
+footer {
+	font-family: serif;
 }
 
 * {
-			margin: 0;
-			padding: 0;
+	margin: 0;
+	padding: 0;
 }
