@@ -92,8 +92,8 @@ input {
 }
 
 ::selection {
-	background: #fe57a1;
-	color: white;
+	background: white;
+	color: black;
 }
 
 #name, #phone, #emailaddress, #streetaddress, #address {
