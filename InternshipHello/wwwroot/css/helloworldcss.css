@@ -1,3 +1,7 @@
+body {
+	background-color: #0032A0;
+}
+
 #content {
 	display: box;
 	display: -moz-box;
@@ -9,13 +13,8 @@
 	-webkit-box-orient: vertical;
 	-ms-box-orient: vertical;
 
-	height: 200px;
-	width: 600px;
-	margin-right: auto;
-	margin-left: auto;
-
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #main {
@@ -23,25 +22,36 @@
 	display: -moz-box;
 	display: -webkit-box;
 	display: -ms-box;
+	
 	box-orient: horizontal;
-
 	-moz-box-orient: horizontal;
 	-webkit-box-orient: horizontal;
 	-ms-box-orient: horizontal;
 }
 
+#nav {
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 25px;
+	background-color: blue;
+	color: white;
+	width: 15%;
+}
+
 #left {
-	box-flex: 6;
-	-moz-box-flex: 6;
-	-webkit-box-flex: 6;
-	-ms-box-flex: 6;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 25px;
+	background-color: aliceblue;
+	width: 60%;
 }
 
 #right {
-	box-flex: 1;
-	-moz-box-flex: 1;
-	-webkit-box-flex: 1;
-	-ms-box-flex: 1;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 25px;
+	background-color: lightsteelblue;
+	width: 25%;
 }
 
 header {
@@ -50,11 +60,6 @@ header {
 	background-color: #0032A0;
 	color: white;
 	padding: 0;
-}
-
-form {
-	display: flex;
-	flex-direction: column;
 }
 
 input {
@@ -67,39 +72,38 @@ input {
 	color: black;
 }
 
-button {
-	background-color: #0032A0;
-	border: none;
-	padding: 12px;
-	outline: none;
+.btn, .button {
+	background-color: #2904A4;
 	color: white;
-	border-radius: 4px;
 }
 
-button:hover {
-	cursor: pointer;
-	background-color: #2904A4;
+.button:hover {
+	background-color: blue;
+	color: white;
+}
+
+.btn:hover {
+	background-color: #0032A0;
+	color: white;
+}
+
+.divider {
+	border-left: solid;
 }
 
 ::selection {
-	background: #0032A0;
+	background: #fe57a1;
 	color: white;
 }
 
 #name, #phone, #emailaddress, #streetaddress, #address {
 	font-weight: bold;
-	text-align: center;
 	font-size: 16px;
-	margin-bottom: 50px;
-}
-
-.small-text {
-	font-size: 8px;
-	font-weight: normal;
 }
 
 h2 {
 	display: inline;
+	text-align: center;
 }
 
 label, p {
@@ -112,15 +116,125 @@ p {
 	margin-bottom: 12px;
 }
 
-p.your-input {
+.underline {
+	text-decoration: underline;
+	font-weight: bold;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.navtext, .activetext {
+	font-weight: bold;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	font-size: 10px;
+}
+
+.activetext {
+	color: white;
+	background-color: gray;
+}
+
+#footer {
+	position: static;
+	display: block;
+	text-align: center;
+	background-color: #0032A0;
+	color: white;
+	padding: 0;
+}
+
+hgroup {
 	text-align: center;
 }
 
-footer {
-	font-family: serif;
+.topnav {
+	overflow: hidden;
+	background-color: #0032A0;
+	margin-bottom: 0;
+}
+  
+.topnav a {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 16px;
+	margin-bottom: 0;
 }
 
-* {
-	margin: 0;
-	padding: 0;
+.topnav a:hover {
+	background-color: silver;
+	color: black;
+}
+
+.topnav a.active {
+	background-color: white;
+	color: black;
+}
+
+.topnav a.logout {
+	background-color: red;
+	color: white;
+	float: right;
+}
+
+.topnav .search-container {
+	float: left;
+	margin-bottom: 0;
+}
+
+.topnav input[type=text] {
+	padding: 6px;
+	margin-top: 8px;
+	font-size: 17px;
+	border: none;
+	margin-bottom: 0;
+}
+
+#save {
+    visibility: hidden;
+}
+
+.img {
+	text-align: left;
+	float: left;
+}
+
+.navbar-text {
+	text-align: left;
+	color: black;
+	display: inline-block;
+}
+
+.navbar-text span {
+	background-color: yellow;
+	float: left;
+	text-align: center;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+}
+
+a:link {
+	color: white;
+}
+
+a:visited {
+	color: lightgray;
+}
+
+a:hover {
+	color: lightsteelblue;
+}
+
+a:active {
+	color: aliceblue;
 }
