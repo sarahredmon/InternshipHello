@@ -2,86 +2,50 @@
     ViewData["Title"] = "myInfo - myUK : University of Kentucky";
 }
 
-<div id="content">
-	<div id="main">
-		<div id="nav">
-			<p class="underline">Navigate myInfo</p>
-			<p class="activetext"><a href="#myInfo">myInfo</a></p>
-			<p class="navtext"><a href="#myPasscode">myPasscode</a></p>
-			<p class="navtext"><a href="#myProfile">myProfile</a></p>
-			<p class="navtext"><a href="#Academic Calendar">Academic Calendar</a></p>
-			<p class="navtext"><a href="#Direct Deposit Info">Direct Deposit Info</a></p>
-			<p class="navtext"><a href="#Link Blue Account Info">Link Blue Account Info</a></p>
-			<p class="navtext"><a href="#UK Account Manager">UK Account Manager</a></p>
-			<p class="navtext"><a href="#myAppointments">myAppointments</a></p>
-			<p class="navtext"><a href="#Guest Access">Guest Access</a></p>
-			<p class="navtext"><a href="#Campus Housing">Campus Housing</a></p>
-			<p class="navtext"><a href="#Undergrad Housing">Undergrad Housing</a></p>
-			<p class="navtext"><a href="#myOrgs">myOrgs</a></p>
-			<p class="navtext"><a href="#Integrated Success Coaching">Integrated Success Coaching</a></p>
-			<p class="navtext"><a href="#Involvement and Volunteer Advising">Involvement and Volunteer Advising</a></p>
-			<p class="navbar-text"><span>Signed in as Sarah Redmon</span></p>
-		</div>
 
-		<div id="left">
-			<p>Kindly fill out the following form.</p>
-			<form method="post">
-				<label for="fnln">First and Last Names</label>
-				<div class="input-group">
-					<span class="input-group-addon" id="basic-addon1">First Name</span>
-					<input type="text" name="fn" id="fn" class="form-control" placeholder="First Name" aria-describedby="basic-addon1">
+<div class="col-sm-10">
+	<div class="form-section">
+		<p>Kindly fill out the following form to make your changes. After clicking "Submit" you can view your information in the section above and confirm or discard your changes.</p>
+		<form method="post" class="row gy-2 gx-3 align-items-center">
+			<div class="input-group">
+				<span class="input-group-text">First name</span>
+				<input type="text" name="fn" id="fn" placeholder="First Name" aria-label="First name" class="form-control">
+				<span class="input-group-text">Last name</span>
+				<input type="text" name="ln" id="ln" placeholder="Last Name" aria-label="Last name" class="form-control">
+			</div>
 
-					<span class="input-group-addon" id="basic-addon1">Last Name</span>
-					<input type="text" name="ln" id="ln" class="form-control" placeholder="Last Name" aria-describedby="basic-addon1">
-				</div>
+			<div class="input-group w-50">
+				<span class="input-group-text">Phone</span>
+				<input type="text" name="p" id="p" placeholder="Phone" aria-label="Phone" class="form-control">
+			</div>
 
-				<label for="p">Phone</label>
-				<div class="col-md-6">
-					<span class="input-group-addon" id="basic-addon2">Phone</span>
-					<input type="text" name="p" id="p" class="form-control" placeholder="Phone" aria-describedby="basic-addon2">
-				</div>
+			<div class="input-group w-75">
+				<span class="input-group-text">Email Address</span>
+				<input type="text" name="ea" id="ea" placeholder="Email Address" aria-label="Email Address" class="form-control">
+			</div>
 
-				<label for="ea">Email Address</label>
-				<div class="col-md-6">
-					<span class="input-group-addon" id="basic-addon3">Email Address</span>
-					<input type="text" name="ea" id="ea" class="form-control" placeholder="Email Address" aria-describedby="basic-addon3">
-				</div>
+			<div class="input-group w-75">
+				<span class="input-group-text">Street Address</span>
+				<input type="text" name="sa" id="sa" placeholder="Street Address" aria-label="Street Address" class="form-control">
+			</div>
 
-				<label for="sa">Street Address</label>
-				<div class="col-md-6">
-					<span class="input-group-addon" id="basic-addon4">Street Address</span>
-					<input type="text" name="sa" id="sa" class="form-control" placeholder="Street Address" aria-describedby="basic-addon3">
-				</div>
+			<div class="input-group">
+				<span class="input-group-text">City</span>
+				<input type="text" name="c" id="c" placeholder="City" aria-label="City" class="form-control">
+				<span class="input-group-text">State</span>
+				<input type="text" name="s" id="s" placeholder="State" aria-label="State" class="form-control">
+				<span class="input-group-text">Zip Code</span>
+				<input type="text" name="zc" id="zc" placeholder="Zip Code" aria-label="Zip Code" class="form-control">
+			</div>
 
-				<label for="cszc">City, State, and Zip Code</label>
-				<div class="input-group">
-					<span class="input-group-addon" id="basic-addon5">City</span>
-					<input type="text" name="c" id="c" class="form-control" placeholder="City" aria-describedby="basic-addon5">
-
-					<span class="input-group-addon" id="basic-addon5">State</span>
-					<input type="text" name="s" id="s" class="form-control" placeholder="State" aria-describedby="basic-addon5">
-
-					<span class="input-group-addon" id="basic-addon5">Zip Code</span>
-					<input type="text" name="zc" id="zc" class="form-control" placeholder="Zip Code" aria-describedby="basic-addon5">
-				</div>
-				<input type="button" value="Submit" class="btn btn-default" id="submit">
-			</form>
-		</div>
-
-		<div id="right">
-			<p>Your input:</p>
-			First and Last Names: <div id="name"></div>
-			Phone: <div id="phone"></div>
-			Email Address: <div id="emailaddress"></div>
-			Street Address: <div id="streetaddress"></div>
-			City, State, and Zip Code: <div id="address"></div>
-
-			<div id="name"></div>
-			<div id="phone"></div>
-			<div id="emailaddress"></div>
-			<div id="streetaddress"></div>
-			<div id="address"></div>
-			<input type="submit" value="Save Information" class="button" id="save">
-		</div>
+			<input type="button" value="Submit" class="submitbtn" id="submit">
+		</form>
+	</div>
+	<div class="input-section">
+		<div id="name"></div>
+		<div id="phone"></div>
+		<div id="emailaddress"></div>
+		<div id="streetaddress"></div>
+		<div id="address"></div>
 	</div>
 </div>

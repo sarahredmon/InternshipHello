@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] (InternshipHello)</title>
-    <link rel="icon" type="image/x-icon" href="~/favicon.ico">
+    <link rel="icon" type="image/ico" href="~/favicon.ico">
 	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/InternshipHello.styles.css" asp-append-version="true" />
 	<link rel="stylesheet" href="~/css/helloworldcss.css" asp-append-version="true" />
@@ -13,30 +13,43 @@
 
     <header>
 		<hgroup>
-			<div class="img"><img src="https://comm.uky.edu/sites/default/files/inline-images/my-UK.png" height="51.5" width="113.5"></div>
+			<div class="img"><img src="https://comm.uky.edu/sites/default/files/inline-images/my-UK.png" width="140" height="70"></div>
             <h2>myInfo - myInfo</h2>
             <div class="topnav">
-                <a class="logout" href="#Log Out">Log Out</a>
-                <div class="search-container">
-                    <form action="/action_page.php">
-                        <input type="text" placeholder="Search" name="search">
-                        <input type="submit" value="Search" class="button" id="search">
-                    </form>
+                <div class="navbtns">
+                    <a href="#myPage">myPage</a>
+                    <a class="active" href="#myInfo">myInfo</a>
+                    <a href="#myRecords">myRecords</a>
+                    <a href="#Admissions">Admissions</a>
+                    <a href="#myUKGPS">Degree Planning and Registration (myUKGPS)</a>
+                    <a href="#Financials">Financials</a>
+                    <a href="#UK Alert">UK Alert</a>
                 </div>
-                <a class="divider" href="#myPage">myPage</a>
-                <a class="active" href="#myInfo">myInfo</a>
-                <a href="#myRecords">myRecords</a>
-                <a href="#Admissions">Admissions</a>
-                <a href="#myUKGPS">Degree Planning and Registration (myUKGPS)</a>
-                <a href="#Financials">Financials</a>
-                <a href="#UK Alert">UK Alert</a>
+
+                <div class="input-group search w-25">
+                    @* <form action="/action_page.php"> *@
+                    <input type="search" id="form1" class="form-control" placeholder="Search" />
+                    <button type="button" class="searchbtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </button>
+                    @* </form> *@
+                </div>
             </div>
 		</hgroup>
 	</header>
 
     <div>
         <main>
-            @RenderBody()
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <partial name="_Nav.cshtml" />
+                    </div>
+                    @RenderBody()
+                </div>
+            </div>
         </main>
     </div>
 

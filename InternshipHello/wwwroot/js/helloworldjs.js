@@ -1,16 +1,14 @@
-// Declare and initialize all variables
-var firstname = document.getElementById("fn").value;
-var lastname = document.getElementById("ln").value;
-var phone = document.getElementById("p").value;
-var emailaddress = document.getElementById("ea").value;
-var streetaddress = document.getElementById("sa").value;
-var city = document.getElementById("c").value;
-var state = document.getElementById("s").value;
-var zipcode = document.getElementById("zc").value;
-var submit = document.getElementById("submit");
-var save = document.getElementById("save");
-
 submit.onclick = function() {
+	// Declare and initialize all variables
+	var firstname = document.getElementById("fn").value;
+	var lastname = document.getElementById("ln").value;
+	var phone = document.getElementById("p").value;
+	var emailaddress = document.getElementById("ea").value;
+	var streetaddress = document.getElementById("sa").value;
+	var city = document.getElementById("c").value;
+	var state = document.getElementById("s").value;
+	var zipcode = document.getElementById("zc").value;
+
 	/*
 	Go through each field and verify if the input is valid:
 	- If not valid, show alert and return false to the method, allowing the user to try again
@@ -58,8 +56,8 @@ submit.onclick = function() {
 
 	// Assign each JavaScript variable to a HTML variable to display
 	document.getElementById("name").innerHTML = firstname + " " + lastname;
-	document.getElementById("phone").innerHTML = document.getElementById("p").value;
-	document.getElementById("emailaddress").innerHTML = document.getElementById("ea").value;
-	document.getElementById("streetaddress").innerHTML = document.getElementById("sa").value;
+	document.getElementById("phone").innerHTML = phone;
+	document.getElementById("emailaddress").innerHTML = emailaddress;
+	document.getElementById("streetaddress").innerHTML = streetaddress;
 	document.getElementById("address").innerHTML = city + ", " + state + " " + zipcode;
 }

@@ -1,113 +1,72 @@
 body {
-	background-color: #0032A0;
-}
-
-#content {
-	display: box;
-	display: -moz-box;
-	display: -wekbit-box;
-	display: -ms-box;
-
-	box-orient: vertical;
-	-moz-box-orient: vertical;
-	-webkit-box-orient: vertical;
-	-ms-box-orient: vertical;
-
-	font-size: 0;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#main {
-	display: box;
-	display: -moz-box;
-	display: -webkit-box;
-	display: -ms-box;
-	
-	box-orient: horizontal;
-	-moz-box-orient: horizontal;
-	-webkit-box-orient: horizontal;
-	-ms-box-orient: horizontal;
-}
-
-#nav {
-	padding-left: 25px;
-	padding-right: 25px;
-	padding-bottom: 25px;
-	background-color: blue;
-	color: white;
-	width: 15%;
-}
-
-#left {
-	padding-left: 25px;
-	padding-right: 25px;
-	padding-bottom: 25px;
 	background-color: aliceblue;
-	width: 60%;
 }
 
-#right {
-	padding-left: 25px;
-	padding-right: 25px;
-	padding-bottom: 25px;
-	background-color: lightsteelblue;
-	width: 25%;
+main {
+	font-size: 16px;
 }
 
 header {
 	display: block;
 	text-align: center;
-	background-color: #0032A0;
+	background-color: #0033A0;
 	color: white;
 	padding: 0;
 }
 
-input {
+input, .input-group-text, .searchbtn {
 	margin: 4px 0px 16px 0px;
 	outline: none;
-	padding: 8px;
 	border: none;
-	background-color: #E1E1E1;
 	border-radius: 4px;
 	color: black;
 }
 
-.btn, .button {
-	background-color: #2904A4;
+.submitbtn, .searchbtn {
+	background-color: #0033A0;
 	color: white;
+	border: none;
 }
 
-.button:hover {
+.searchbtn {
+	background-color: blue;
+	width: 20%;
+}
+
+.submitbtn {
+	margin-left: 8px;
+	width: 10%;
+	padding: 10px 10px 10px 10px;
+}
+
+.submitbtn:hover {
 	background-color: blue;
 	color: white;
 }
 
-.btn:hover {
-	background-color: #0032A0;
-	color: white;
+.searchbtn:hover {
+	background-color: white;
+	color: black;
 }
 
-.divider {
-	border-left: solid;
+.topnav .input-group.search {
+	float: right;
+	margin-right: 5px;
 }
 
 ::selection {
-	background: white;
+	background: lightsteelblue;
 	color: black;
 }
 
 #name, #phone, #emailaddress, #streetaddress, #address {
 	font-weight: bold;
-	font-size: 16px;
 }
 
 h2 {
 	display: inline;
 	text-align: center;
-}
-
-label, p {
-	font-size: 16px;
+	margin-bottom: 25;
 }
 
 p {
@@ -116,30 +75,45 @@ p {
 	margin-bottom: 12px;
 }
 
-.underline {
-	text-decoration: underline;
-	font-weight: bold;
-	margin-top: 12px;
-	margin-bottom: 12px;
+.nav-link {
+	color: white;
 }
 
-.navtext, .activetext {
-	font-weight: bold;
-	margin-top: 12px;
-	margin-bottom: 12px;
-	font-size: 10px;
-}
-
-.activetext {
+.nav-link.active {
 	color: white;
 	background-color: gray;
+}
+
+.nav-link.logout {
+	color: white;
+	background-color: red;
+	float: center;
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	font-size: 70%;
+}
+
+.nav-link.logout:hover {
+	color: white;
+	background-color: pink;
+}
+
+.nav-link.logout:active {
+	color: black;
+	background-color: white;
+}
+
+.nav-link.active:hover, .nav-link:hover {
+	color: black;
+	background-color: white;
 }
 
 #footer {
 	position: static;
 	display: block;
 	text-align: center;
-	background-color: #0032A0;
+	background-color: #0033A0;
 	color: white;
 	padding: 0;
 }
@@ -150,7 +124,7 @@ hgroup {
 
 .topnav {
 	overflow: hidden;
-	background-color: #0032A0;
+	background-color: #0033A0;
 	margin-bottom: 0;
 }
   
@@ -161,13 +135,12 @@ hgroup {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	font-size: 16px;
 	margin-bottom: 0;
 }
 
-.topnav a:hover {
-	background-color: silver;
-	color: black;
+.topnav a:hover, .topnav a.active:hover {
+	background-color: gray;
+	color: white;
 }
 
 .topnav a.active {
@@ -175,66 +148,61 @@ hgroup {
 	color: black;
 }
 
-.topnav a.logout {
-	background-color: red;
-	color: white;
-	float: right;
-}
-
 .topnav .search-container {
-	float: left;
-	margin-bottom: 0;
+	margin-bottom: 50;
+	width: 32%;
 }
 
 .topnav input[type=text] {
 	padding: 6px;
 	margin-top: 8px;
-	font-size: 17px;
 	border: none;
-	margin-bottom: 0;
-}
-
-#save {
-    visibility: hidden;
 }
 
 .img {
 	text-align: left;
 	float: left;
+	margin-right: 10px;
+	padding-top: 10px;
 }
 
 .navbar-text {
 	text-align: left;
 	color: black;
 	display: inline-block;
-}
-
-.navbar-text span {
 	background-color: yellow;
-	float: left;
 	text-align: center;
+	padding: 0;
+	margin-bottom: 10px;
+	font-weight: bold;
 }
 
-a:link, a:visited {
-	text-decoration: none;
+.container {
+	margin-left: 0;
 }
 
-a:hover, a:active {
-	text-decoration: underline;
-}
-
-a:link {
+.nav flex-column {
+	background-color: blue;
 	color: white;
 }
 
-a:visited {
-	color: lightgray;
+.navbtns {
+	float: left;
 }
 
-a:hover {
-	color: lightsteelblue;
+.form-section, .col-sm-10 {
+	background-color: aliceblue;
 }
 
-a:active {
-	color: aliceblue;
+.input-section {
+	background-color: silver;
+	text-align: center;
+	font-size: 20px;
+	margin: auto;
+	width: 50%;
+}
+
+.col-sm-2 {
+	background-color: blue;
+	color: white;
 }
