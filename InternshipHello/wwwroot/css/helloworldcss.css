@@ -2,8 +2,30 @@ body {
 	background-color: aliceblue;
 }
 
-main {
-	font-size: 16px;
+.col-sm-2 {
+	background-color: blue;
+	color: white;
+}
+
+.col-sm-10, .form-section {
+	background-color: aliceblue;
+}
+
+#footer {
+	position: static;
+	display: block;
+	text-align: center;
+	background-color: #0033A0;
+	color: white;
+}
+
+h2 {
+	display: inline;
+	text-align: center;
+}
+
+hgroup {
+	text-align: center;
 }
 
 header {
@@ -11,68 +33,52 @@ header {
 	text-align: center;
 	background-color: #0033A0;
 	color: white;
-	padding: 0;
+}
+
+.img {
+	text-align: left;
+	float: left;
 }
 
 input, .input-group-text, .searchbtn {
-	margin: 4px 0px 16px 0px;
 	outline: none;
 	border: none;
 	border-radius: 4px;
 	color: black;
 }
 
-.submitbtn, .searchbtn {
-	background-color: #0033A0;
-	color: white;
-	border: none;
+.input-section {
+	background-color: silver;
+	text-align: center;
+	font-size: 20px;
+	margin: auto;
+	width: 50%;
 }
 
-.searchbtn {
-	background-color: blue;
-	width: 20%;
-}
-
-.submitbtn {
-	margin-left: 8px;
-	width: 10%;
-	padding: 10px 10px 10px 10px;
-}
-
-.submitbtn:hover {
-	background-color: blue;
-	color: white;
-}
-
-.searchbtn:hover {
-	background-color: white;
-	color: black;
-}
-
-.topnav .input-group.search {
-	float: right;
-	margin-right: 5px;
-}
-
-::selection {
-	background: lightsteelblue;
-	color: black;
+main {
+	font-size: 16px;
 }
 
 #name, #phone, #emailaddress, #streetaddress, #address {
 	font-weight: bold;
 }
 
-h2 {
-	display: inline;
-	text-align: center;
-	margin-bottom: 25;
+.nav flex-column {
+	background-color: blue;
+	color: white;
 }
 
-p {
+.navbar-text {
+	text-align: left;
+	color: black;
+	display: inline-block;
+	background-color: yellow;
+	text-align: center;
 	font-weight: bold;
-	margin-top: 12px;
-	margin-bottom: 12px;
+}
+
+.navbtns {
+	float: left;
 }
 
 .nav-link {
@@ -84,19 +90,18 @@ p {
 	background-color: gray;
 }
 
+.nav-link.active:hover, .nav-link:hover {
+	color: black;
+	background-color: white;
+}
+
 .nav-link.logout {
 	color: white;
 	background-color: red;
 	float: center;
 	width: 50%;
-	margin: auto;
 	text-align: center;
 	font-size: 70%;
-}
-
-.nav-link.logout:hover {
-	color: white;
-	background-color: pink;
 }
 
 .nav-link.logout:active {
@@ -104,43 +109,56 @@ p {
 	background-color: white;
 }
 
-.nav-link.active:hover, .nav-link:hover {
-	color: black;
-	background-color: white;
-}
-
-#footer {
-	position: static;
-	display: block;
-	text-align: center;
-	background-color: #0033A0;
+.nav-link.logout:hover {
 	color: white;
-	padding: 0;
+	background-color: pink;
 }
 
-hgroup {
-	text-align: center;
+p {
+	font-weight: bold;
+}
+
+.searchbtn {
+	background-color: blue;
+	width: 20%;
+}
+
+.searchbtn, .submitbtn {
+	color: white;
+	border: none;
+}
+
+.searchbtn:hover {
+	background-color: gray;
+	color: white;
+}
+
+::selection {
+	background: lightsteelblue;
+	color: black;
+}
+
+.submitbtn {
+	background-color: #0033A0;
+	width: 10%;
+}
+
+.submitbtn:hover {
+	background-color: blue;
+	color: white;
 }
 
 .topnav {
 	overflow: hidden;
 	background-color: #0033A0;
-	margin-bottom: 0;
 }
-  
+
 .topnav a {
 	float: left;
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 14px 16px;
 	text-decoration: none;
-	margin-bottom: 0;
-}
-
-.topnav a:hover, .topnav a.active:hover {
-	background-color: gray;
-	color: white;
 }
 
 .topnav a.active {
@@ -148,9 +166,9 @@ hgroup {
 	color: black;
 }
 
-.topnav .search-container {
-	margin-bottom: 50;
-	width: 32%;
+.topnav a:hover, .topnav a.active:hover {
+	background-color: gray;
+	color: white;
 }
 
 .topnav input[type=text] {
@@ -159,50 +177,10 @@ hgroup {
 	border: none;
 }
 
-.img {
-	text-align: left;
-	float: left;
-	margin-right: 10px;
-	padding-top: 10px;
+.topnav .input-group.search {
+	float: right;
 }
 
-.navbar-text {
-	text-align: left;
-	color: black;
-	display: inline-block;
-	background-color: yellow;
-	text-align: center;
-	padding: 0;
-	margin-bottom: 10px;
-	font-weight: bold;
-}
-
-.container {
-	margin-left: 0;
-}
-
-.nav flex-column {
-	background-color: blue;
-	color: white;
-}
-
-.navbtns {
-	float: left;
-}
-
-.form-section, .col-sm-10 {
-	background-color: aliceblue;
-}
-
-.input-section {
-	background-color: silver;
-	text-align: center;
-	font-size: 20px;
-	margin: auto;
-	width: 50%;
-}
-
-.col-sm-2 {
-	background-color: blue;
-	color: white;
+.topnav .search-container {
+	width: 32%;
 }
